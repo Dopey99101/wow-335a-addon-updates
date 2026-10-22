@@ -41,7 +41,9 @@ The publisher rejects an existing release tag, creates a draft, uploads the RAR,
 release-manifest.json and SHA256SUMS.txt, checks GitHub's SHA256 digests and sizes,
 then publishes and verifies the public latest-release endpoint. A failed upload
 or hash check stays a draft and does not replace the last good release. Inspect
-the failure before retrying; never use `--clobber` to overwrite a release.
+the failure before retrying; never use `--clobber` to overwrite a release. If all
+assets uploaded successfully but publication was interrupted, add `--resume-draft`
+to verify that exact draft and finish publishing without replacing any files.
 
 Publish finished, verified changes as part of the owner's update workflow. There
 is no timer or folder watcher and no publication of unsaved/unfinished changes.
