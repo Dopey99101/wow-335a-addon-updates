@@ -1,0 +1,377 @@
+﻿NOTE FOR OTHER PLAYERS
+This handbook covers the addons in the server owner's game. You may not have
+every addon listed here. The owner also has the addons supplied to you, so yours
+are included too! Simply use the sections for the addons you have installed.
+Some newer features need the latest addon or matching client patch.
+
+ADDONS-HANDBÓK — VERSION 1.0
+WoW 3.3.5a | 21 October 2026
+
+HOW TO USE THIS HANDBOOK
+Press Enter in WoW, type a command exactly as shown, then press Enter again.
+Use Ctrl+F in this text file to find an addon, command or feature.
+Commands on separate lines are separate examples, not one long command.
+Aliases are alternative names for the same command; use whichever you prefer.
+This is a player guide to the main controls and useful commands, rather than
+a catalogue of developer/debug commands or every advanced setting.
+
+An addon command starts with / and works only when that addon is enabled.
+Server commands starting with . are different and may require staff permission.
+No command in this handbook grants GM permissions.
+
+Check installed addons at character selection using the AddOns button.
+Many settings are also under Esc > Interface > AddOns or a minimap button.
+After installing new addon files, fully close and reopen WoW. /reload alone
+does not load newly added files listed in an addon's loading list.
+
+==========================================================================
+1. COMPANIONS, CHAUFFEUR AND CUSTOM FEATURES
+==========================================================================
+
+MULTIBOT / BOTCARE
+Purpose: Control your companion bots using the MultiBot window.
+  /mb                 Show or hide the main MultiBot window.
+  /mbot               Same as /mb.
+  /multibot           Same as /mb.
+  /mbopt              Open MultiBot options.
+Example: Type /mb, then use the bot and party controls in the window.
+BotCare is an update to MultiBot, not a separate window or slash command.
+Its hunter-pet controls avoid sending pet commands to the wrong bot classes
+or to hunters too low-level to use the requested ability.
+Use the addon's gear buttons for bot equipment; server staff commands are
+separate from these addon controls.
+
+STARTERCHAUFFEUR / CHAUFFEURWORKS
+Purpose: Use the chauffeured chopper and its client support.
+  /chauffeur          Request the chauffeur summon/dismiss action.
+  /chauffeur setup    Place the ride button in an empty action slot, out of combat.
+  /chauffeur status   Show the installed helper version and patch information.
+Example: Type /chauffeur to use your ride.
+Gathering support is automatic with the matching client patch and server fix:
+right-click an ore or herb to step off and gather. There is no separate
+mining/herbalism slash command. Keep the matching data patch installed.
+
+SKYROUTES
+Purpose: Show flight-path pins and recommended zone levels on the world map.
+  /skyroutes          Print discovered/undiscovered counts and discovered stops.
+Open the world map with M to use the map features.
+Green flight icons are undiscovered; discovered stops use the normal icon
+with a gold outline. Pins can move aside when they overlap quest markers.
+This addon does not unlock flight paths or teleport your character.
+
+HUNTERFORGE
+Purpose: Support the custom hunter features and server communication.
+  /hunterforge        Show whether the addon has connected to the server.
+The gameplay helpers work automatically; there is no on/off slash command.
+
+REALMNOTICES / REALMGUARD
+Purpose: Display the realm's maintenance/restart notices and related alerts.
+No player slash commands. Notices appear automatically; dismiss the popup
+with its on-screen control. Ordinary chat warnings still appear in chat.
+
+RELAXEDLOOT / LOOTFLOW
+Purpose: Spread automatic looting over a configurable delay.
+  /slowloot           Show the current setting.
+  /slowloot on        Enable delayed looting.
+  /slowloot off       Disable it and restore the original autoloot behavior.
+  /slowloot 2         Enable it with a two-second delay.
+The supported delay is 0.5–10 seconds. There is no /lootflow command.
+
+DUNGEONCLEAR
+Purpose: Open the dungeon-clearing companion interface.
+  /dc                 Show or hide the DungeonClear window.
+Use the window's buttons for its actions. Server-backed actions still depend
+on your account's permissions and the server's supported features.
+
+MODERNMAPMARKERS
+Purpose: Add map-marker controls to the world map.
+  /mmm                Show or hide the map's filter/search dropdown controls.
+The markers themselves work automatically. /mmm is not a flight unlock.
+
+==========================================================================
+2. QUESTS, MAPS AND DIRECTIONS
+==========================================================================
+
+QUESTHELPER
+Purpose: Suggest quest routes, objectives and directions.
+  /qh                 Show QuestHelper's command help.
+  /questhelper        Alternative main command.
+  /qh hide            Toggle map/minimap modifications and pause/resume routing.
+  /qh hidden          List objectives currently being hidden and their reasons.
+  /qh arrow           Toggle the directional arrow.
+  /qh arrow reset     Move the arrow back to the center of the screen.
+  /qh find murloc     Search the addon's data for Murlocs.
+  /qh find loc 50 50  Find coordinates 50,50 in your current zone.
+  /qh tomtom          Toggle using TomTom for the current objective.
+  /qh solo            Toggle routing without party objective sharing.
+QuestHelper's database can be incomplete. A missing marker does not by itself
+mean the server quest is broken.
+
+TOMTOM
+Purpose: Create personal waypoints and a direction arrow.
+  /tomtom             Open TomTom configuration.
+  /way 42.2 65.0 Inn  Add a waypoint called Inn in your current zone.
+  /wayback            Mark your current position so you can return to it.
+  /wayb               Same as /wayback.
+  /cway               Point the arrow at the closest waypoint.
+  /closestway         Same as /cway.
+Alternatives to /way: /tway and /tomtomway.
+Waypoints guide you; they do not teleport you.
+
+BEQL — EXTENDED QUEST LOG
+  /beql               Access the extended quest-log addon's controls.
+FuBar_beqlFu and Titanbeql are companion display modules, not separate quest
+systems. Their controls are available through their panel buttons.
+
+VOICEOVER
+Purpose: Play recorded quest/NPC dialogue where audio data is available.
+  /vo options         Open VoiceOver options.
+  /vo pause           Pause voice playback.
+  /vo play            Resume playback.
+  /vo skip            Skip the current voice line.
+  /vo clear           Stop playback and clear queued lines.
+AI_VoiceOverData_Vanilla supplies audio data; it has no separate player command.
+
+NPCSCAN
+Purpose: Alert you about supported rare NPCs.
+  /npcscan            Access NPCScan configuration.
+  /scan               Alternative command.
+
+GATHERER
+Purpose: Remember gathering locations and show them on your maps.
+  /gather             Access Gatherer's controls/help.
+  /gatherer           Alternative command.
+Gatherer_HUD is a companion module. The addon records/displays locations;
+it does not gather resources for you.
+
+==========================================================================
+3. COMBAT, DUNGEONS AND EQUIPMENT
+==========================================================================
+
+DEADLY BOSS MODS — DBM
+  /dbm                Open DBM options.
+  /range              Open the range-check display.
+  /distance           Alternative range-check command.
+The DBM dungeon, raid, PvP and WorldEvents folders are encounter modules.
+They use DBM's main controls and do not each need their own command.
+
+RECOUNT
+Purpose: View damage, healing and other combat statistics.
+  /recount toggle     Show or hide the main meter.
+  /recount hide       Hide the main meter.
+  /recount config     Open meter settings.
+  /recount resetpos   Restore meter/detail/graph window positions.
+Use the window's buttons to choose the statistic and encounter you want.
+
+GTFO
+Purpose: Warn you when standing in damaging effects.
+  /gtfo               Access GTFO's options/help.
+
+HEALBOT
+Purpose: Configure healing frames and click bindings.
+  /hb                 Access HealBot controls/options.
+  /healbot            Alternative command.
+TitanHealBot is the related Titan Panel module.
+
+GEARSCORE
+Purpose: Inspect equipment scoring information.
+  /gs                 Main GearScore command.
+  /gearscore          Alternative main command.
+Use the addon's displayed help/options for its inspection and search tools.
+
+PAWN
+Purpose: Compare item stats using configured stat weights.
+  /pawn               Open Pawn's interface.
+Check the selected scale: a score is only as useful as its stat weights.
+
+DRDAMAGE
+Purpose: Add calculated ability information to tooltips/action buttons.
+  /drdamage           Access DrDamage configuration.
+  /drd                Alternative command.
+  /drdmg              Alternative command.
+
+OUTFITTER
+Purpose: Save and switch equipment outfits.
+  /outfitter          Access Outfitter's controls.
+Create named outfits in its interface before using outfit-specific actions.
+
+DRESSME
+Purpose: Browse and preview appearances.
+  /dressme            Show or hide the DressMe window.
+Previewing an appearance does not grant the item or a server permission.
+
+DUNGEONJOURNAL
+  /dj                 Open the dungeon journal interface.
+  /dungeonjournal     Alternative command.
+
+CLASSLOOT
+Purpose: Add class/loot suitability information through its UI/tooltips.
+Use its addon settings. No standalone command is listed in this handbook.
+
+==========================================================================
+4. BAGS, PROFESSIONS, AUCTIONS AND COLLECTIONS
+==========================================================================
+
+BAGNON
+Purpose: Combine bags and add inventory search/display features.
+  /bagnon             Access Bagnon controls/options.
+  /bgn                Alternative command.
+Bagnon_Config, Forever, GuildBank and Tooltips are companion modules.
+Your normal bag key still opens your bags.
+
+ARKINVENTORY
+Purpose: Organize bags using categories and rules.
+  /arkinventory       Access ArkInventory's command options.
+  /arkinv             Alternative command.
+  /ai                 Alternative command.
+If another bag addon is installed too, choose which bag interface you prefer
+in the AddOns list rather than enabling overlapping bag replacements blindly.
+
+GENIE
+Purpose: Organize, move and stack inventory using configured rules.
+  /genie              Show the available Genie command options.
+Configure its rules through its addon settings before using sorting actions.
+
+AUCTIONATOR
+Purpose: Simplify auction buying/selling and price searches.
+  /atr                Access Auctionator's command controls.
+  /auctionator        Alternative command.
+Most everyday actions are in its tabs at the auction house.
+
+AUCTIONEER — AUC-ADVANCED
+Purpose: Auction price data, scanning and auction tools.
+  /auc                Access Auctioneer's command controls.
+  /aadv               Alternative command.
+  /auctioneer         Alternative command.
+The Auc-Filter, Auc-ScanData, Auc-Stat and Auc-Util folders are components.
+BeanCounter tracks auction transactions; use its auction-house interface.
+
+ENCHANTRIX
+Purpose: Enchanting/disenchanting value and related auction information.
+  /enchantrix         Access Enchantrix's command controls.
+  /enchant            Alternative command.
+  /enx                Alternative command.
+Enchantrix-Barker is a companion module; configure it through its interface.
+
+INFORMANT
+Purpose: Add item information to tooltips.
+  /informant          Access Informant's command controls.
+  /inform             Alternative command.
+  /inf                Alternative command.
+Prefer /informant over the short /info alias to avoid command conflicts.
+
+SMARTVENDOR
+Purpose: Automatically repair at suitable vendors when enabled.
+  /sv                 Show available SmartVendor commands.
+  /sv autorepair on   Enable automatic repairs.
+  /sv autorepair off  Disable automatic repairs.
+  /sv guildrepair on  Allow guild-funded repairs when permitted by the guild.
+  /sv guildrepair off Stop using guild funds for repairs.
+/smartvendor can replace /sv in these commands.
+
+ACKIS RECIPE LIST
+Purpose: Find missing profession recipes and their sources.
+  /arl                Access Ackis Recipe List controls.
+  /ackisrecipelist    Alternative command.
+Use the recipe scan/interface with the relevant profession available.
+
+PROFESSION CAPPER
+Purpose: Profession skill-up guidance.
+  /pcapper            Access the Profession Capper interface/controls.
+
+FISHING BUDDY
+Purpose: Fishing support, equipment and tracking.
+  /fb                 Access Fishing Buddy controls/help.
+  /fishingbuddy       Alternative command.
+
+COLLECTINATOR
+Purpose: Track collectible pets/mounts supported by its database.
+  /collectinator      Access Collectinator's controls.
+
+OVERACHIEVER
+Purpose: Add achievement tracking and achievement-related information.
+  /oa                 Access Overachiever's command options.
+The Tabs and Trade folders extend its interface; use the achievement window
+and addon settings for their features.
+
+POSTAL, CURRENCY AND BONUSSCANNER
+Postal adds controls to the mailbox window; use those buttons.
+Currency provides currency information through its interface/settings.
+BonusScanner supplies item-stat information for supported addons.
+These do not need an everyday chat command to use their main features.
+
+==========================================================================
+5. INTERFACE, CHAT AND STAFF TOOLS
+==========================================================================
+
+MOVEANYTHING
+Purpose: Move and adjust interface elements.
+  /move               Open MoveAnything's configuration window.
+Make changes out of combat. Use its interface to select and restore frames.
+
+MINIMAP BUTTON FRAME
+Purpose: Collect addon minimap buttons into one frame.
+  /mbf config         Open configuration.
+  /mbf show           Show the button frame.
+  /mbf hide           Hide the button frame.
+  /mbf help           Show command help.
+Its SkinPack folder supplies appearance options, not separate commands.
+
+TITAN PANEL
+Purpose: Display addon information and controls on a screen-edge panel.
+  /titan              Access Titan Panel's controls/help.
+  /titanpanel         Alternative command.
+Right-click panel items for their own options.
+
+SLIDEBAR
+Purpose: Provide a collapsible bar for supported addon buttons.
+  /slidebar           Access SlideBar controls.
+  /sbar               Alternative command.
+  /nsb                Alternative command.
+
+CHAT SOUNDS
+  /chatsounds         Access ChatSounds configuration.
+
+CHANNELNOTICECOMPAT AND LINKEDTEXT
+Chat/channel compatibility and clickable-text helpers work automatically.
+No everyday player command is needed for their main features.
+
+TRINITYADMIN — STAFF ONLY
+  /ta                 Open the staff administration interface.
+  /trinityadmin       Alternative command.
+An interface button does not guarantee permission to run its server action.
+Your assigned server role determines what you can do. Use your separate
+staff command guide for permitted server commands and examples.
+
+SWATTER — ERROR REPORTING
+  /swatter            Access the addon's Lua error reporting tools.
+  /swat               Alternative command.
+If reporting a problem, copy the first relevant error and explain what you
+clicked. Swatter is a diagnostic tool, not a gameplay feature.
+
+STUBBY AND SHARED SUPPORT MODULES
+These load or support other addons and normally work automatically.
+Blizzard_* folders are the game's built-in interface modules.
+Companion modules, libraries, audio data and skin packs are not separate
+addons you need to operate with their own chat commands.
+
+==========================================================================
+6. QUICK TROUBLESHOOTING AND VERSION HISTORY
+==========================================================================
+
+COMMAND DOES NOTHING / CHAT SAYS TO TYPE HELP
+1. Check that the addon is installed and enabled at character selection.
+2. Check spelling and use the full command if a short alias conflicts.
+3. After installing new files, completely exit and reopen WoW.
+4. Check Esc > Interface > AddOns and the addon/minimap buttons.
+5. Tell the owner the addon name, command used and exact error/result.
+
+STANDARD WOW COMMAND
+  /reload             Reload the current interface and existing addon files.
+This is a built-in WoW command, not a command created by a custom addon.
+It cannot install missing addons or load a replacement client data patch.
+
+HANDBOOK RELEASES
+1.0 — First player handbook, checked against the owner's installed addons.
+Future requested revisions use 1.1, 1.2 and so on. Older published files are
+kept so players can tell which guide they have.

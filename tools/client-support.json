@@ -1,0 +1,65 @@
+{
+  "executables": [
+    {
+      "name": "Wow.exe",
+      "before": "aa63a5750d60ef16746c686b3d5e26876d98953eab08b1c026cd0faf78e88cb8",
+      "after": "28287cd94e6ab2d6e68865f49314b456d2750dcb5d0b8ecca12eeddf72b7bf80"
+    },
+    {
+      "name": "Wow-HD.exe",
+      "before": "4218fef354f875d1d27aae9cc6a93c75aaadaa1f0beea1204172793cd39e0505",
+      "after": "4218fef354f875d1d27aae9cc6a93c75aaadaa1f0beea1204172793cd39e0505"
+    }
+  ],
+  "patches": [
+    {
+      "offset": 2048447,
+      "before": "74",
+      "after": "eb"
+    },
+    {
+      "offset": 4282917,
+      "before": "75",
+      "after": "eb"
+    },
+    {
+      "offset": 4282943,
+      "before": "01",
+      "after": "03"
+    },
+    {
+      "offset": 4283029,
+      "before": "01",
+      "after": "03"
+    },
+    {
+      "offset": 4283206,
+      "before": "7f",
+      "after": "eb"
+    },
+    {
+      "offset": 4283231,
+      "before": "83c0",
+      "after": "b803"
+    },
+    {
+      "offset": 4283233,
+      "before": "035e8be55d",
+      "after": "000000ebed"
+    }
+  ],
+  "knownPatchHashes": {
+    "Data/patch-N.MPQ": [
+      "2f67e261c65262bba41cde6918a52dc9dbfac806c311baa5c40c3aaf64ddec99"
+    ],
+    "Data/patch-L.MPQ": [
+      "2d5d87034993d2268c496b170f735c1b6751b918b818d0cbf08156264bc4cc6c",
+      "c1e7c8b970a8444f8b2747cd8e0803f7b2dd4b81692264a0bfcca2cfad6d88c8",
+      "f25b72c0a55fbbaddef8ea633adba3dcf26ba6eb467f9fa452c2f9b7f7a04d9f"
+    ],
+    "Data/patch-M.MPQ": [
+      "058d119862f0ebd3a0caffbc7c4345750d5c0c65a3961bb81c162f40d822fcb6",
+      "395705934459c664b096222a93b1d9bdb8f4b907fdd0147ea9fc8b307232b8b2"
+    ]
+  }
+}
