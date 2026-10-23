@@ -56,7 +56,6 @@ Publishing follows a finished, checked update. No folder watcher publishes
 unfinished edits. This repository does not read a player's game folder or send
 their account information anywhere.
 
-## For the owner
-
-See [PUBLISHING.md](PUBLISHING.md) for build and upload commands. Packages are
-attached to Releases; large game files never go into Git history.
+##Cliant Links
+Link to WoW-3.3.5a-ORIGINAL : https://www.mediafire.com/file_premium/btmvf0q3nqutgyh/RealmVoyager-1.0.rar/file                          
+Link to WoW-3.3.5a-ULTRAHD : https://www.mediafire.com/file_premium/67mpwkdfpf1fpw6/RealmVoyagerUltraHD-1.0.rar/file
