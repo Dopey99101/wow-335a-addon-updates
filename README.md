@@ -56,6 +56,6 @@ Publishing follows a finished, checked update. No folder watcher publishes
 unfinished edits. This repository does not read a player's game folder or send
 their account information anywhere.
 
-##Cliant Links
+## Cliant Links
 Link to WoW-3.3.5a-ORIGINAL : https://www.mediafire.com/file_premium/btmvf0q3nqutgyh/RealmVoyager-1.0.rar/file                          
 Link to WoW-3.3.5a-ULTRAHD : https://www.mediafire.com/file_premium/67mpwkdfpf1fpw6/RealmVoyagerUltraHD-1.0.rar/file
