@@ -45,7 +45,7 @@ try {
     $seen=@{}
     foreach($file in $manifest.files) {
         $relative=[string]$file.path
-        if($relative -notmatch '^Interface/AddOns/[^/]+/.+' -and $relative -notmatch '^Data/patch-[LMN]\.MPQ$'){throw 'Unexpected payload path.'}
+        if($relative -notmatch '^Interface/AddOns/[^/]+/.+' -and $relative -notmatch '^Data/patch-[BLMN]\.MPQ$'){throw 'Unexpected payload path.'}
         if($seen.ContainsKey($relative.ToLower())){throw 'Duplicate package path.'};$seen[$relative.ToLower()]=$true
         $source=Safe-Path $packageRoot $relative;$target=Safe-Path $gameRoot $relative
         if((Hash $source) -ne $file.sha256 -or (Get-Item -LiteralPath $source).Length -ne $file.bytes){throw ('Package damaged: '+$relative)}

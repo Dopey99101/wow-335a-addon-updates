@@ -60,6 +60,9 @@
     "Data/patch-M.MPQ": [
       "058d119862f0ebd3a0caffbc7c4345750d5c0c65a3961bb81c162f40d822fcb6",
       "395705934459c664b096222a93b1d9bdb8f4b907fdd0147ea9fc8b307232b8b2"
+    ],
+    "Data/patch-B.MPQ": [
+      "86c878dead8da520f295e8a42b7f0c2d7ef0009f4b288e8639a21d9395f200ae"
     ]
   }
 }

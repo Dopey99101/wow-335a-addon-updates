@@ -8,7 +8,7 @@ import re
 import shutil
 import subprocess
 
-PATCHES=('patch-L.MPQ','patch-M.MPQ','patch-N.MPQ')
+PATCHES=('patch-B.MPQ','patch-L.MPQ','patch-M.MPQ','patch-N.MPQ')
 EXCLUDED_DIRS={'.git','.svn','__pycache__','savedvariables','wtf','cache','logs','screenshots'}
 EXCLUDED_SUFFIXES={'.bak','.log','.pyc','.dmp','.sql','.tmp','.pfx','.pem','.key'}
 
@@ -78,7 +78,7 @@ UPDATING: Follow the same steps. Existing WTF settings are left alone.
 Replaced files are backed up under RealmAddons-Backups in your game folder.
 Your extra addons are not deleted. Installing addons does not grant staff permissions.
 
-CONTENTS: {len(folders)} addon folders and the matching custom patches L, M and N.
+CONTENTS: {len(folders)} addon folders and the matching custom patches B, L, M and N.
 The installer checks the exact supported WoW executable and applies only the known
 interface compatibility bytes needed by RealmGuard. It does not download an executable.
 Unknown executables and conflicting custom MPQs stop installation before game files change.
@@ -114,7 +114,7 @@ Interface compatibility patch reference: https://github.com/suprsokr/allow-custo
     (output/'SHA256SUMS.txt').write_text(release['sha256']+'  '+archive.name+'\n',encoding='ascii')
     (output/'release-notes.md').write_text(f'''RealmAddons {a.version}
 
-Complete player update: {len(folders)} addon folders plus matching patches L/M/N.
+Complete player update: {len(folders)} addon folders plus matching patches B/L/M/N.
 Includes installation instructions and {handbook.name}. Close WoW, extract the RAR
 and run START-INSTALL.cmd. Select the game folder containing Wow.exe and Data.
 
